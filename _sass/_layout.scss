@@ -1,3 +1,18 @@
+//scaffolding
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
 // hero
 
 .overlay {
@@ -8,49 +23,6 @@
     bottom: 0;
     background: rgba(59, 59, 59, .74);
     z-index: 1;
-}
-
-header {
-    background: url(../img/hero-banner-1.jpg) center center fixed no-repeat;
-    height: 100vh;
-    background-size: Cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .wrapper {
-        z-index: 2;
-    }
-
-    nav {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-
-    ul {
-        text-align: center;
-        display: table;
-        margin: auto;
-        text-transform: uppercase;
-        font-size: 0.750em;
-        padding: 1em;
-    }
-
-    li {
-        float: left;
-        display: inline;
-
-        &:not(:last-child) {
-            margin-right: 2em;
-        }
-    }
-
-    a,
-    a:visited{
-        color: $brand-colour;
-    }
 }
 
 .logo {
@@ -74,19 +46,18 @@ h1 {
     }
 }
 
+// stuff
 
-// about 
-
-.about {
-      article { 
-        @include span-columns(9); 
-      }
-      aside { 
-        @include span-columns(3); 
-      }
-
-      img {
-        max-width: none;
-      }
+p:last-of-type {
+    margin: 0;
 }
 
+.circle {
+    position: relative;
+    border-radius: 50%;
+    width: 75%;
+    height: auto;
+    padding-top: 75%;
+    display: block;
+    margin: auto;
+}

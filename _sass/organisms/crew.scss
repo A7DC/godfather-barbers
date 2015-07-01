@@ -1,0 +1,36 @@
+.crew {
+    background: $light-gray;
+
+    h2 {
+        text-align: center;
+    }
+
+    .profile-holder {
+        display: flex;
+
+        > div {
+            width: 33.3333333%;
+            text-align: center;
+        }
+    }
+
+    .Danny,
+    .Rod,
+    .Alex {
+        @extend .circle;
+        background-repeat: none;
+    }
+    
+    .Danny {
+        background: url(../img/Danny.png) -1% 19%;
+    }
+    
+    .Rod {
+        background: url(../img/Rod.png) 0;
+    }
+
+    .Alex {
+        background: url(../img/Alex.png) -5% 7%;
+    }
+
+}

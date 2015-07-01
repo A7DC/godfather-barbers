@@ -16,7 +16,8 @@ h6 {
   font-family: $heading-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  margin: 0;
+  padding: 0 0 32px 0;
   &:not(h1) {
       text-transform: uppercase;
       color: $brand-colour;
