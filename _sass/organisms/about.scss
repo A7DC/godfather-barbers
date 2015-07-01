@@ -1,19 +1,26 @@
 .about {
     display: flex;
-      article { 
-      @include span-columns(9); 
-      > div {
-              display: flex;
-      align-items: flex-start;
-      justify-content: center;  
-      flex-direction: column;
-      }
-      }
-      aside { 
-        @include span-columns(3); 
-      }
 
-      img {
-        max-width: none;
-      }
+	article { 
+		@include span-columns(9);
+
+		> div {
+	      	display: flex;
+			align-items: flex-start;
+			justify-content: center;  
+			flex-direction: column;
+
+			p {
+				padding-right: 60px;
+			}
+		}
+	}
+
+	aside { 
+		@include span-columns(3); 
+	}
+
+	img {
+		max-width: none;
+	}
 }

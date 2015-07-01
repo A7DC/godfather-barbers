@@ -18,19 +18,36 @@
     .Rod,
     .Alex {
         @extend .circle;
-        background-repeat: none;
     }
     
     .Danny {
-        background: url(../img/Danny.png) -1% 19%;
+        background: url(../img/Danny.png) no-repeat -1% 19%;
+        background-size: cover;
     }
     
     .Rod {
-        background: url(../img/Rod.png) 0;
+        background: url(../img/Rod.png) no-repeat 0 0;
+        background-size: cover;
     }
 
     .Alex {
-        background: url(../img/Alex.png) -5% 7%;
+        background: url(../img/Alex.png) no-repeat 0 7%;
+        background-size: cover;
     }
 
+    h3 {
+        padding: 16px 0 0;
+        font-size: 20px;
+    }
+
+    .nickname {
+        color: lighten($dark-gray, 20%);
+        font-style: italic;
+        padding: 4px 0 16px;
+        margin: 0;
+    }
+
+    p {
+        padding: 0px 8px;
+    }
 }

@@ -37,7 +37,10 @@ header {
     }
 
     a,
-    a:visited{
+    a:visited,
+    a:hover,
+    a:focus {
         color: $brand-colour;
+        cursor: pointer;
     }
 }
