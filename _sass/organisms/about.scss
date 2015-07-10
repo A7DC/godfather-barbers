@@ -1,23 +1,22 @@
 .about {
-    display: flex;
+    .wrapper {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
 
-	article { 
-		@include span-columns(9);
+		article { 
+			flex: 3;
 
-		> div {
-	      	display: flex;
-			align-items: flex-start;
-			justify-content: center;  
-			flex-direction: column;
-
-			p {
-				padding-right: 60px;
+			> div {
+				p {
+					padding-right: 60px;
+				}
 			}
 		}
 	}
 
 	aside { 
-		@include span-columns(3); 
+		flex: 1
 	}
 
 	img {
