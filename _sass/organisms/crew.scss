@@ -8,9 +8,22 @@
     .profile-holder {
         display: flex;
 
+        @include mobile {
+            flex-direction: column;
+        }
+
         > div {
-            width: 33.3333333%;
             text-align: center;
+
+            @include mobile {
+                width: 70%;
+                max-width: 368px;
+                margin: 20px auto;
+
+                &:nth-child(2) {
+                    order: -1;
+                }
+            }
         }
     }
 
