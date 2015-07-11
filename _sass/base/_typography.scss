@@ -17,11 +17,10 @@ h6 {
   font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0;
-  padding: 0 0 32px 0;
-  &:not(h1) {
-      text-transform: uppercase;
-      color: $brand-colour;
-  }
+  padding: 0 0 60px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: $brand-colour;
 }
 
 h2 {
@@ -30,6 +29,7 @@ h2 {
 
 p {
   margin: 0 0 $small-spacing;
+  font-size: 0.875em;
 }
 
 a {
