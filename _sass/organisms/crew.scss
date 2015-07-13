@@ -13,10 +13,9 @@
         }
 
         > div {
-            text-align: center;
 
             @include mobile {
-                width: 70%;
+                width: 80%;
                 max-width: 368px;
                 margin: 20px auto;
 
@@ -31,6 +30,10 @@
     .Rod,
     .Alex {
         @extend .circle;
+
+        + h2 {
+            padding: 20px 0 0;
+        }
     }
     
     .Danny {
@@ -48,19 +51,15 @@
         background-size: cover;
     }
 
-    h3 {
-        padding: 16px 0 0;
-        font-size: 20px;
-    }
-
     .nickname {
+        text-align: center;
         color: lighten($dark-gray, 20%);
         font-style: italic;
-        padding: 4px 0 16px;
+        padding: 4px 0 20px;
         margin: 0;
     }
 
     p {
-        padding: 0px 8px;
+        padding: 0px 24px;
     }
 }
